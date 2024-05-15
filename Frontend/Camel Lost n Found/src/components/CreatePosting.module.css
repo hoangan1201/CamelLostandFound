@@ -1,0 +1,90 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.addButton {
+  font-size: 3rem;
+}
+
+.addForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .addForm > * {
+  margin: 10px;
+} */
+
+.addForm div {
+  margin: 5px;
+}
+
+.popupForm {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.popupFormContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.formRow > * {
+  margin: 0;
+}
+
+.descriptionInput {
+  flex: 1;
+}
+
+.checkboxGroup {
+  display: flex;
+}
+
+.formSingleInput{
+  margin: 0;
+}
+
+.closeButton {
+  border: none;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.closeButton:hover{
+    scale: 1.5;
+    color: #db3f2e;
+}

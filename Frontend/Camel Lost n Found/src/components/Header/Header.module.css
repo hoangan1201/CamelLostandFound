@@ -1,0 +1,37 @@
+.header {
+  background-color: #002f5f;
+  /* margin: auto -16px; */
+  padding: 0 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.infoContainer,
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer img {
+  width: 4rem;
+  margin-right: 10px;
+}
+
+.infoContainer > * {
+  margin-right: 1rem;
+}
+
+.infoContainer span {
+  cursor: pointer;
+}
+
+.verticleLine {
+  float: left;
+  height: 50px;
+  width: 1px;
+  background-color: gray;
+}

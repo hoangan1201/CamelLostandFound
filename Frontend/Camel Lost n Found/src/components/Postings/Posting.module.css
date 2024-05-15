@@ -1,0 +1,108 @@
+.posting {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: -4px 1px 15px -1px #000000;
+  box-shadow: -4px 1px 15px -1px #000000;
+
+  /* -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1); */
+}
+
+.postingInfo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  font-size: 1.3rem;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.postingInfo > * {
+  margin: 0;
+}
+
+.postingInfo p {
+  margin-left: 5px;
+}
+
+.itemImg {
+  width: 100%;
+  /* max-height: 400px; */
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.descriptionParagraph {
+  padding-left: 15px;
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+/* Pop Up styles */
+.popupPost {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.popupPostContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.closeButton {
+  border: none;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.lost {
+  color: #f44336;
+}
+
+.found {
+  color: #1976d2;
+}
+
+.claimed {
+  color: #8f8685;
+}

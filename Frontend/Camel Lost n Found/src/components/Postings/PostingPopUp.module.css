@@ -1,0 +1,91 @@
+.popupPostContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentRow {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.imgContainerRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 2px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  margin: 1rem 0;
+}
+
+.imgContainerRow img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  margin: 0;
+  object-fit: cover;
+}
+
+.contentRow div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.fontSize2 {
+  font-size: 1.5rem;
+}
+
+.contentRow > * {
+  margin: 0;
+}
+
+.rowGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.actionRow {
+  /* align-content: center; */
+  justify-content: center;
+  gap: 5%;
+}
+
+.actionRow p{
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.actionRow > *:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+}
+
+.actionRow > *:hover path {
+  fill: #031c36;
+  /* fill: none; */
+}
+
+/* .icon{
+  margin-right: 10px;
+} */
+
+/* .placeTime{
+  justify-content: space-between;
+} */
+
+.lost {
+  color: #f44336;
+}
+
+.found {
+  color: #1976d2;
+}
+
+.claimed{
+  color: #8f8685;
+}

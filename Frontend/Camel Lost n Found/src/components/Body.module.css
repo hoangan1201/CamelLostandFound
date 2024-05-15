@@ -1,0 +1,31 @@
+.postingContainer{
+    display: grid;
+    /* For use when smaller screen size */
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr));
+    grid-gap: 3vh 2vh;
+    padding: 0 15%;
+    margin-bottom: 10%;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+    /* min-height: 80vh; */
+}
+
+.addButton{
+    width: 20%;
+    margin: 20px;
+}
+
+.addButtoonContainer, .searchBarContainer{
+    margin-left: 15%;
+    margin-top: 1rem;
+}
+
+.pageTitle{
+    color: white;
+    font-size: 3rem;
+}
